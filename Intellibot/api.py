@@ -3,7 +3,7 @@ import json
 import os
 
 BASE_URL = "https://intellihack-backend-rcbmvyttca-uc.a.run.app"
-BASE_URL_LOCAL = "http://127.0.0.1:8000"
+BASE_AGENT_URL = "https://intellihack-research-agent-rcbmvyttca-uc.a.run.app"
 CREDENTIALS_FILE = "credentials.json"
 
 class IntelliBotAPI:
@@ -80,7 +80,7 @@ class IntelliBotAPI:
         }
 
         response = requests.post(
-            BASE_URL_LOCAL + f"/agentConfiguration/",
+            BASE_AGENT_URL + f"/agentConfiguration/",
             json=config_data,
             headers=headers,
         )
@@ -95,7 +95,7 @@ class IntelliBotAPI:
             "Authorization": f"Bearer {self.access_token}",
         }
         response = requests.get(
-            f"{BASE_URL_LOCAL}/agentConfiguration/projects/{self.user_id}",
+            f"{BASE_AGENT_URL}/agentConfiguration/projects/{self.user_id}",
             headers=headers,
         )
         return response
@@ -109,7 +109,7 @@ class IntelliBotAPI:
             "Authorization": f"Bearer {self.access_token}",
         }
         response = requests.get(
-            f"{BASE_URL_LOCAL}/agentConfiguration/execute/{project_name}",
+            f"{BASE_AGENT_URL}/agentConfiguration/execute/{project_name}",
             headers=headers,
         )
         return response

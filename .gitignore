@@ -1,1 +1,6 @@
 .venv
+.pypirc
+build
+dist
+intellibot.egg-info
+*.json

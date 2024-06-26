@@ -1,13 +1,13 @@
 # Intellibot
 
-Intellibot is a terminal-based chatbot client for interacting with the ViewMo cloud platform. It allows users to connect to the platform using their credentials and chat with the bot through a command-line interface. And also this package let users to initialize there own RAG Agents and run them on ViewMo platform.
+Intellibot is a terminal-based client for interacting with the ViewMo cloud platform. It allows users to connect to the platform using their credentials and chat with the bot through a command-line interface. And also this package let users to initialize there own RAG Agents and run them on ViewMo platform.
 
 ## Installation
 
 To install Intellibot, run:
 
 ```sh
-pip install Intellibot
+pip install intellibot
 ```
 
 ## Usage
@@ -112,7 +112,7 @@ You can then use the `intellibot` CLI commands as described above to test the fu
 
 ## Project Structure
 
-```
+```sh
 Intellibot/
 ├── intellibot/
 │   ├── __init__.py
